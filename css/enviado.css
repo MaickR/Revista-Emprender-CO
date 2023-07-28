@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:500");
+
+body{
+    background-color: rgb(211, 207, 207);
+}
+
+.wrapper{
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    border: 10px solid black;
+    margin: 5% auto;
+    animation:color 4s ease-in infinite ; 
+    
+}
+
+.plane{
+    position: absolute;
+    z-index: 100;
+    animation: plane-move 1s 2s ease-in forwards ;
+    
+}
+
+ img{
+    width: 100%;
+    height: 100%;
+    margin: 20% 25%;
+}
+
+.tick{
+    position: absolute;
+    opacity: 0;
+    animation: tick-visible 1s 3s ease-out forwards;
+    
+}
+
+@keyframes plane-move{
+   
+    
+    50%{
+        transform: translate(90%,-90%);
+        opacity: 0.5;
+    }
+    80%,100%{
+        transform: translate(90%,-90%);
+        opacity: 0;
+        
+    }
+}
+
+@keyframes tick-visible{
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes color{
+    0%{
+        border-color: black;
+    }
+    
+     10%{
+        border-color: red;
+    }
+    
+    20%{
+        border-color: brown;
+    }
+    
+    30%{
+        border-color: pink;
+    }
+    
+    40%{
+        border-color: gold;
+    }
+    
+    50%{
+        border-color: violet;
+    }
+    
+    60%{
+        border-color: paleturquoise;
+    }
+    
+    70%{
+        border-color: blue;
+    }
+    
+    80%{
+        border-color: mediumslateblue;
+    }
+    
+    90%{
+        border-color: coral;
+    }
+    
+    100%{
+        border-color: palevioletred;
+    }
+}
+
+h2{
+    text-align: center;
+    width: 97%;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+    text-align: center;
+
+    padding: 15px;
+	color: rgb(255, 255, 255);
+	font-family: 'Fira Sans', sans-serif;
+}
+
+p{
+    text-align: center;
+    width: 97%;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+    text-align: center;
+
+    padding: 15px;
+	color: rgb(255, 255, 255);
+	font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+#centrar{
+    display: flex;
+    justify-content: center;
+    padding-right: 39px;
+}
+
+button {
+  -webkit-appearance: none;
+  background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+  background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+  background-size: 500%;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  color: #fff;
+  cursor: pointer;
+  font: 1.5em Raleway, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 5rem;
+  letter-spacing: 0.05em;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 25rem;
+}
+
+button:hover {
+  animation-name: gradient;
+  -webkit-animation-name: gradient;
+  animation-duration: 2s;
+  -webkit-animation-duration: s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
